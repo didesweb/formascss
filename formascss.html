@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Como crear formas complejas con border-radius en CSS3 </title>
+	<style type="text/css"> 
+	body{text-align:center;}
+		.huevo, .burguer, .limon, .oliva, .melon, .capsula, .hoja {
+			display: inline-block;
+		}
+		.huevo {
+			border-radius: 50% / 70% 70% 40% 40%;
+			background: #FFE4AC;
+			border: 1px solid #CCCCCC;
+			margin: 2%;
+			height: 100px;
+			width: 80px;
+			box-shadow: 0 0 60px rgba(0, 0, 0, 0.2) inset,
+            -5px -5px 15px rgba(0, 0, 0, 0.1) inset;
+		}
+		.limon {
+			border-radius: 10% 100% 40% 100%;
+			background: #FFFF00;
+			border: 1px solid #888888;
+			margin: 2%;
+			height: 100px;
+			width: 80px;
+			box-shadow: 0px 0px 10px 10px #b8b800 inset;
+		}
+		.oliva {
+			border-radius: 40% 100% 40% 100%;
+			background: #669900;
+			border: 1px solid #333300;
+			margin: 2%;
+			height: 100px;
+			width: 80px;
+			box-shadow: 0px 0px 10px 10px #336600 inset;
+		}
+		.melon {
+			border-radius: 100% / 95% 95% 95% 95%;
+			background: linear-gradient(to bottom, #627d4d 0%, #2b4217 7%, #50693c 28%, #2b4217 52%, #50693c 74%, #2b4217 91%, #2b4217 100%);
+			border: 1px solid #555555;
+			margin: 2%;
+			height: 60px;
+			width: 90px;
+			box-shadow: 0px 0px 15px 5px #2b4217 inset;
+		}
+		.capsula {
+			border-radius: 20px;
+			background: linear-gradient(to right, #10ba00 0%, #10ba00 50%, #fc0505 51%, #ff0000 100%);
+			border: 1px solid #999999;
+			margin: 2%;
+			height: 40px;
+			width: 110px;
+		}
+		.burguer {
+			border-radius: 50%;
+			background: #996600;
+			border: 1px solid #663300;
+			margin: 2%;
+			height: 40px;
+			width: 80px;
+			box-shadow:  0px 2px #CC3300,  0px 10px #660000,  0px 12px #669900, 0px 19px #996600;
+			 transform:skew(75deg,100deg));
+		}
+		.hoja {
+			height: 100px;
+			width: 100px;
+			border-radius: 0 100% 0 100%;
+			background: linear-gradient(45deg, #58ad5c 0%, #27662b 50%, #27662b 51%, #27662b 51%, #58ad5c 100%);
+		}
+	</style>
+</head>
+<body>
+	<h1>Como crear formas complejas con border-radius en CSS3 </h1>
+	<h2>didesweb.com</h2>
+	<div class="capsula"></div>
+	<div class="limon"></div>
+	<div class="hoja"></div>
+	<div class="burguer"></div>
+	<div class="oliva"></div>
+	<div class="huevo"></div>
+	<div class="melon"></div>
+</body>
+</html>
